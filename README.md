@@ -1,4 +1,4 @@
-Inventory Management Backend
+Inventory Management Backend:
 This is the Spring Boot–based backend for the Inventory Management System. It handles authentication (JWT-based), authorization (role-based), and inventory CRUD operations.
 
  Architecture Overview:
@@ -17,11 +17,11 @@ The frontend sends the JWT token in Authorization: Bearer <token> header.
 Spring Security validates the token and grants access to protected endpoints.
 Only users with the ADMIN role can add or delete inventory items.
 
-Authentication
+Authentication:
 POST /api/auth/register – Register a new user.
 POST /api/auth/login – Login and receive JWT token.
 
-Inventory (Protected)
+Inventory (Protected):
 GET /api/inventory – List all inventory items.
 POST /api/inventory – Add a new item (ADMIN only).
 DELETE /api/inventory/{id} – Delete item by ID (ADMIN only).
